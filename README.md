@@ -2,19 +2,19 @@
 Let's create an app that will let us see where people are.
 
 ## Create a server
-* Make sure its listening
-* Make sure it can serve static files
-* Make sure to use body-parser
-* create a variable `lastClientId = 0`
-* create a variable `clients = []`
-* Make a route for a POST to path `/clients`
-  * The server should expect to receive a body as `{"name":"Bob"}`
-  * The server should increment lastClientId by one.
-  * The server should create a new object `{name:theName, clientId:lastClientId,lat:"",long:"",location:""}` and add it to the clients array
-  * The server should send back this object as json
-* Make a route for a POST to path `/locations`
-  * The server should expect to receive a body as `{"id":3, lat:"30.23",long:"-97.7"}`
-  * use this information to make a node-fetch call to a [Reverse GeoLocation Server](https://repl.it/@jw56578/TerrificSnappyConditionals)
+<!-- * Make sure its listening -->
+<!-- * Make sure it can serve static files -->
+<!-- * Make sure to use body-parser -->
+<!-- * create a variable `lastClientId = 0` -->
+<!-- * create a variable `clients = []` -->
+<!-- * Make a route for a POST to path `/clients` -->
+  <!-- * The server should expect to receive a body as `{"name":"Bob"}` -->
+  <!-- * The server should increment lastClientId by one. -->
+  <!-- * The server should create a new object `{name:theName, clientId:lastClientId,lat:"",long:"",location:""}` and add it to the clients array -->
+  <!-- * The server should send back this object as json -->
+<!-- * Make a route for a POST to path `/locations` -->
+  <!-- * The server should expect to receive a body as `{"id":3, lat:"30.23",long:"-97.7"}` -->
+  <!-- * use this information to make a node-fetch call to a [Reverse GeoLocation Server](https://repl.it/@jw56578/TerrificSnappyConditionals) -->
   * extract the address from this call
   * find the appropriate object from the array by id with find
   * update the keys `lat, long, location`
